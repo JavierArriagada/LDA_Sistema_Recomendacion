@@ -1,0 +1,74 @@
+@startuml 
+!define LIGHTBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+class Documento {
+  .. int ..
+  - id_doc
+  + year
+  + Pages
+  .. Strings ..
+  + Publisher
+  + document_title
+  - text
+  .. Method ..
+  + get_topic_vector()
+  ~ void pre_procesar()
+
+
+}
+
+
+class Intereses
+
+
+
+class Key_Features
+
+
+
+
+Documento "1" *-- "many" Docente : contains
+
+class Palabras_Clave{
+  .. int ..
+  .. Strings ..
+  .. Method ..
+}
+
+class Author{
+  .. int ..
+  .. Strings ..
+  .. Method ..
+}
+
+
+
+class Docente {
+  - int id_docente
+  String nombre
+  String text
+  + get_topic_vector()
+  
+
+}
+
+
+
+
+
+
+@enduml
+
+
+note left: this class is a secretClass
+
+<> diamond
+() circle
+abstract abstract 
+annotation annotation      
+
+class class
+entity entity
+enum enum
+interface interface
