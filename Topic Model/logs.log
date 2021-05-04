@@ -2057,3 +2057,74 @@
 2021-05-02 19:19:47,913:INFO:Preparing pyLDAvis visual
 2021-05-02 19:20:06,338:INFO:Visual Rendered Successfully
 2021-05-02 19:20:06,338:INFO:plot_model() succesfully completed......................................
+2021-05-03 18:36:33,027:INFO:PyCaret NLP Module
+2021-05-03 18:36:33,027:INFO:version 2.3.0
+2021-05-03 18:36:33,027:INFO:Initializing setup()
+2021-05-03 18:36:33,027:INFO:USI: 0dac
+2021-05-03 18:36:33,027:INFO:setup(data=(969, 2), target=text, custom_stopwords=['use', 'fig', 'figure', 'value', 'www', 'org', 'also', 'model', 'ch', 'er_al', 'research', 'researchgate_net', 'year', 'upwelle', 'however', 'ca', 'slr', 'area', 'sir', 'reference', 'page', 'may', 'table', 'show', 'study', 'therefore', 'thus', 'may', 'term', 'low', 'sample', 'result', 'test', 'author', 'prepare', 'report', 'que', 'set', 'column', 'moreover', 'find', 'read', 'total', 'author_funder_granted_biorxiv', 'holder_preprint_peer_reviewe', 'licence_display_preprint_perpetuity', 'rights_reserved_reuse_allowe', 'biorxiv_preprint_first_poste', 'content_courtesy_springer_nature', 'terms_apply_rights_reserve', 'university_chicago_press', 'conditions_http_journal', 'content_downloaded_march_subject', 'reviews_aquaculture_author', 'reviews_aquaculture_published_john', 'publication', 'time', 'funder_granted_biorxiv_license', 'display_preprint_perpetuity_right', 'authors_publication_working_relate', 'reserved_reuse_allowed_without', 'user_requested_enhancement_downloaded', 'view_project_content_followe', 'upload', 'international_license_permit', 'sharing_adaptation_distribution_reproduction', 'claims_published_maps_institutional', 'creative_commons_license', 'intended_permitted_statutory_regulation', 'exceeds_permitted_need', 'open_acces_article_license', 'creative_commons_attribution', 'international_license_permit', 'copyright_holder_view', 'preprints_preprints_peer_reviewe', 'preprint', 'posted_june_doi', 'university_concepcion_publications_citation', 'deem', 'publications_citations_publications_citation', 'authors_working_related_projects', 'synthesis', 'introduction', 'owe', 'scientific', 'average', 'september_user_requeste', 'source', 'type', 'old', 'field', 'single', 'day', 'https_researchgate_net', 'victor_roberto_parra_sanchez', 'university_concepcion', 'universidad', 'related_project', 'view_project', 'january_user_requested', 'profile', 'student', 'manuel', 'professor_department', 'dynamic', 'calculation', 'general', 'context', 'valid', 'experimental', 'eq', 'email', 'citations_reads_authors_include', 'article', 'technology', 'citations_reads_authors_include', 'university_concepcion_publications_citation', 'katia_saez_university_concepcion', 'katia_saez_university_publication', 'authors_working_related_project', 'view_project_content_following', 'puerto', 'file', 'registered_office_mortimer_house', 'wt', 'environmental', 'detail', 'include', 'instruction', 'authors_subscription', 'information', 'doi_citations_read', 'authors_include', 'faculty', 'department', 'whatsoever_howsoever_cause', 'arising_directly_indirectly', 'access', 'found_http_tandfonline', 'com', 'condition', 'received_august_accepte', 'concepcion', 'box', 'plot', 'able', 'others', 'above-mentioned otherwise', 'accordingly', 'overall', 'across', 'rather', 'along', 'remarkably', 'already', 'significantly', 'alternatively simply', 'always sometimes', 'among specifically', 'and', 'or', 'straight', 'forward', 'anything', 'substantially', 'anywhere', 'thereafter', 'better', 'therebetween', 'disclosure', 'therefor', 'due', 'therefrom', 'easily', 'therein', 'easy', 'thereinto+', 'eg', 'thereon', 'either', 'therethrough', 'university', 'whatsoever', 'distribution_form_anyone', 'expressly_forbidden', 'follow', 'additionally', 'analysis', 'distribution', 'elsewhere', 'therewith', 'enough', 'together', 'especially', 'toward', 'essentially', 'towards', 'et al', 'typical', 'etc', 'typically', 'eventually', 'upon', 'excellent', 'via', 'finally', 'vice versa', 'furthermore', 'whatever', 'good', 'whereas', 'hence', 'whereat', 'he', 'she', 'wherever', 'him', 'her', 'whether', 'his', 'her', 'whose', 'ie', 'within', 'ii', 'without', 'iii', 'yet', 'instead', 'later', 'like', 'little', 'many', 'may', 'meanwhile', 'might', 'moreover', 'much', 'must', 'never', 'often', 'line', 'phase', 'cycle', 'increase', 'effect', 'induce', 'activity', 'estimate', 'high', 'unit', 'download', 'material', 'follow', 'example', 'level', 'variable', 'see', 'present', 'citation', 'distribution', 'equation', 'document', 'paper', 'citation_recomendation', 'pag', 'stre', 'non', 'enchufetv', 'solution', 'problem', 'method', 'function', 'case', 'consider', 'order', 'give', 'obtain', 'theorem', 'define', 'process', 'system', 'section', 'numerical', 'first', 'second', 'error', 'base', 'element', 'item', 'measurement', 'could', 'need', 'datum', 'image', 'let', 'assume', 'proof', 'denote', 'constant', 'unknown', 'review', 'publish', 'copyright', 'abstract', 'factor'], html=True, session_id=20521, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2021-05-03 18:36:33,027:INFO:Checking environment
+2021-05-03 18:36:33,027:INFO:python_version: 3.7.10
+2021-05-03 18:36:33,027:INFO:python_build: ('default', 'Feb 26 2021 13:06:18')
+2021-05-03 18:36:33,027:INFO:machine: AMD64
+2021-05-03 18:36:33,028:INFO:platform: Windows-10-10.0.19041-SP0
+2021-05-03 18:36:33,029:WARNING:cannot find psutil installation. memory not traceable. Install psutil using pip to enable memory logging. 
+2021-05-03 18:36:33,029:INFO:Checking libraries
+2021-05-03 18:36:33,029:INFO:pd==1.2.3
+2021-05-03 18:36:33,029:INFO:numpy==1.19.5
+2021-05-03 18:36:34,383:INFO:gensim==3.8.3
+2021-05-03 18:36:35,087:INFO:spacy==2.3.5
+2021-05-03 18:36:36,506:INFO:nltk==3.5
+2021-05-03 18:36:36,554:INFO:textblob==0.15.3
+2021-05-03 18:36:37,029:INFO:pyLDAvis==3.2.2
+2021-05-03 18:36:37,149:INFO:wordcloud==1.8.1
+2021-05-03 18:36:37,882:INFO:mlflow==1.14.1
+2021-05-03 18:36:37,882:INFO:Checking Exceptions
+2021-05-03 18:36:38,686:INFO:Preloading libraries
+2021-05-03 18:36:38,815:INFO:Preparing display monitor
+2021-05-03 18:36:38,848:INFO:Importing libraries
+2021-05-03 18:36:38,849:INFO:Declaring global variables
+2021-05-03 18:36:38,849:INFO:Input provided : dataframe
+2021-05-03 18:36:38,849:INFO:session_id set to : 20521
+2021-05-03 18:36:38,849:INFO:Copying training dataset
+2021-05-03 18:36:38,850:INFO:Importing stopwords from nltk
+2021-05-03 18:36:39,111:INFO:Removing numeric characters from the text
+2021-05-03 18:36:41,057:INFO:Removing special characters from the text
+2021-05-03 18:37:01,072:INFO:Tokenizing Words
+2021-05-03 18:37:24,549:INFO:Removing stopwords
+2021-05-03 18:38:00,608:INFO:Extracting Bigrams
+2021-05-03 18:38:44,720:INFO:Extracting Trigrams
+2021-05-03 18:39:59,409:INFO:Lemmatizing tokens
+2021-05-03 18:43:38,942:INFO:Removing stopwords after lemmatizing
+2021-05-03 18:43:53,981:INFO:Creating corpus and dictionary
+2021-05-03 18:43:57,361:INFO:Compiling processed text
+2021-05-03 18:43:57,452:INFO:Compiling information grid
+2021-05-03 18:43:57,967:INFO:setup() succesfully completed......................................
+2021-05-03 18:45:00,196:INFO:Initializing get_config()
+2021-05-03 18:45:00,196:INFO:get_config(variable=corpus)
+2021-05-03 18:45:00,196:INFO:Global variable: corpus returned
+2021-05-03 18:45:00,196:INFO:get_config() succesfully completed......................................
+2021-05-03 18:45:00,197:INFO:Initializing get_config()
+2021-05-03 18:45:00,197:INFO:get_config(variable=id2word)
+2021-05-03 18:45:00,197:INFO:Global variable: id2word returned
+2021-05-03 18:45:00,197:INFO:get_config() succesfully completed......................................
+2021-05-03 18:45:00,198:INFO:Initializing get_config()
+2021-05-03 18:45:00,198:INFO:get_config(variable=data_)
+2021-05-03 18:45:00,198:INFO:Global variable: data_ returned
+2021-05-03 18:45:00,198:INFO:get_config() succesfully completed......................................
+2021-05-03 19:10:10,833:INFO:Initializing get_config()
+2021-05-03 19:10:10,833:INFO:get_config(variable=corpus)
+2021-05-03 19:10:10,833:INFO:Global variable: corpus returned
+2021-05-03 19:10:10,833:INFO:get_config() succesfully completed......................................
+2021-05-03 19:10:10,834:INFO:Initializing get_config()
+2021-05-03 19:10:10,834:INFO:get_config(variable=id2word)
+2021-05-03 19:10:10,834:INFO:Global variable: id2word returned
+2021-05-03 19:10:10,834:INFO:get_config() succesfully completed......................................
+2021-05-03 19:10:10,835:INFO:Initializing get_config()
+2021-05-03 19:10:10,835:INFO:get_config(variable=data_)
+2021-05-03 19:10:10,835:INFO:Global variable: data_ returned
+2021-05-03 19:10:10,835:INFO:get_config() succesfully completed......................................
+2021-05-03 19:10:10,835:INFO:Initializing get_config()
+2021-05-03 19:10:10,835:INFO:get_config(variable=text)
+2021-05-03 19:10:10,836:INFO:Global variable: text returned
+2021-05-03 19:10:10,836:INFO:get_config() succesfully completed......................................
