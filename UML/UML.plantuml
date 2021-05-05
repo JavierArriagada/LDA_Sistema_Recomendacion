@@ -4,35 +4,36 @@
 
 package "FrontEnd" #DDDDDD {
   
-  recomendar <- corpus_lda_model
+  class Modelo_LDA_Final{
+
+  }
     
-  class recomendar{
+  class Recomendacion{
 
   }
 
 
   class Docente {
-    - int id_docente
+    - int id_Docente
     String nombre
-    String text
-    + get_topic_vector()
     
 
   }
 
-  object Intereces {
+  class Intereces {
 
   }
 
-  object Expertiz {
+  class Expertiz {
 
   }
 
-  class corpus_lda_model{
+  class Custom_search {
 
   }
   
- 
+
+  
   
 
   class Documento {
@@ -56,18 +57,10 @@ package "FrontEnd" #DDDDDD {
 package BackEnd #DDDDDD{
   class Pre_procesar
   
+  class train_LDA
 
-  package "Entrenamiento Modelo" #DDDDDD {
-
+  class LDA_Model
   
-  
-  
-  class LDA_Algorithm
-  
-   
-  }
-
-  Object corpus_entrenamiento
   
 }
 
@@ -79,37 +72,51 @@ package Database <<Database>> {
 
 
 
-
-LDA_Algorithm - corpus_entrenamiento
- 
+Database -- Pre_procesar
 
 
 
-Database <|-- Pre_procesar
+Database -- Documento
 
-corpus_lda_model -- Database
+Intereces -- Docente 
+Expertiz -- Docente 
+Custom_search -- Docente
+Recomendacion -- Custom_search
+Recomendacion -- Expertiz
+Recomendacion -- Intereces
+Recomendacion -- Documento
 
-
-
-corpus_entrenamiento -- Database
-  
- 
-recomendar - Docente
-
-Database - Documento 
-
-recomendar - Intereces
-recomendar - Expertiz
-recomendar - Documento
+Modelo_LDA_Final -- Recomendacion
 
 
-Documento  	|o-- Docente : tiene
-Intereces   	|o-- Docente : tiene
-Expertiz   	}o-- Docente : tiene
+Database -- Modelo_LDA_Final
 
 
+Pre_procesar -- train_LDA
+train_LDA -- LDA_Model
+
+LDA_Model - Database
 
 @enduml
+
+
+
+
+
+
+Recomendacion - Documento
+Recomendacion - Intereces
+Recomendacion - Expertiz
+Recomendacion - Custom_search
+
+Database - Documento
+Documento  	|o-- Docente : tiene
+Recomendacion <- LDA_Model_Final
+
+Intereces   	|o-- Docente : tiene
+Expertiz   	}o-- Docente : tiene
+Recomendacion - Documento
+Recomendacion - Docente
 
 
 note left: this class is a secretClass
