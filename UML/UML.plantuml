@@ -2,59 +2,110 @@
 !define LIGHTBLUE
 !includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
 
-class Documento {
+package "FrontEnd" #DDDDDD {
+  
+  recomendar <- corpus_lda_model
+    
+  class recomendar{
+
+  }
+
+
+  class Docente {
+    - int id_docente
+    String nombre
+    String text
+    + get_topic_vector()
+    
+
+  }
+
+  object Intereces {
+
+  }
+
+  object Expertiz {
+
+  }
+
+  class corpus_lda_model{
+
+  }
+  
+ 
+  
+
+  class Documento {
   .. int ..
   - id_doc
   + year
   + Pages
   .. Strings ..
-  + Publisher
   + document_title
   - text
   .. Method ..
   + get_topic_vector()
   ~ void pre_procesar()
 
+  }
+
 
 }
-
-
-class Intereses
-
-
-
-class Key_Features
-
-
-
-
-Documento "1" *-- "many" Docente : contains
-
-class Palabras_Clave{
-  .. int ..
-  .. Strings ..
-  .. Method ..
-}
-
-class Author{
-  .. int ..
-  .. Strings ..
-  .. Method ..
-}
-
-
-
-class Docente {
-  - int id_docente
-  String nombre
-  String text
-  + get_topic_vector()
   
 
+package BackEnd #DDDDDD{
+  class Pre_procesar
+  
+
+  package "Entrenamiento Modelo" #DDDDDD {
+
+  
+  
+  
+  class LDA_Algorithm
+  
+   
+  }
+
+  Object corpus_entrenamiento
+  
+}
+
+
+package Database <<Database>> {
+
+  
 }
 
 
 
+
+LDA_Algorithm - corpus_entrenamiento
+ 
+
+
+
+Database <|-- Pre_procesar
+
+corpus_lda_model -- Database
+
+
+
+corpus_entrenamiento -- Database
+  
+ 
+recomendar - Docente
+
+Database - Documento 
+
+recomendar - Intereces
+recomendar - Expertiz
+recomendar - Documento
+
+
+Documento  	|o-- Docente : tiene
+Intereces   	|o-- Docente : tiene
+Expertiz   	}o-- Docente : tiene
 
 
 
