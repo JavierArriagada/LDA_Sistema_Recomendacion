@@ -75,11 +75,11 @@ package Database <<Database>> {
 Database -- Pre_procesar
 
 
+Intereces "0..*" -- "1..*" Docente :tiene
+Expertiz "0..*" -- "1..*" Docente : tiene
+Documento "0..*" -- "1..*" Docente : author
 
-Database -- Documento
 
-Intereces -- Docente 
-Expertiz -- Docente 
 Custom_search -- Docente
 Recomendacion -- Custom_search
 Recomendacion -- Expertiz
@@ -99,7 +99,7 @@ LDA_Model - Database
 
 @enduml
 
-
+Database -- Documento
 
 
 
@@ -113,8 +113,8 @@ Database - Documento
 Documento  	|o-- Docente : tiene
 Recomendacion <- LDA_Model_Final
 
-Intereces   	|o-- Docente : tiene
-Expertiz   	}o-- Docente : tiene
+Intereces  |o-- Docente : tiene
+Expertiz   }o-- Docente : tiene
 Recomendacion - Documento
 Recomendacion - Docente
 
